@@ -1,7 +1,7 @@
 package AccessModifier;
 
 public class LibraryTest {
-    public static void main() {
+    public static void main(String[] args) {
         Library library = new Library();
         library.setCategory("cATEGORY");
         library.setAuthor("author");

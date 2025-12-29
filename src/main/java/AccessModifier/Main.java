@@ -7,5 +7,6 @@ public class Main {
        alex.printPersonInfo();
        alex.setFirstName("Sha");
        alex.printPersonInfo();
+       GameSettings.maxPlayers = 5;
     }
 }

@@ -5,15 +5,14 @@ public class GameSettings {
     final String gameName;
     int currentPlayers;
 
-    GameSettings(int someMaxPlayer, String someGameName, int someCurrentPlayers){
-        this.maxPlayers = someMaxPlayer;
+    GameSettings(String someGameName, int someCurrentPlayers){
         this.gameName = someGameName;
         this.currentPlayers = someCurrentPlayers;
     }
     static void setMaxPlayers(int newMaxPlayer){
         maxPlayers = newMaxPlayer;
     }
-    void addPLayer(){
+    void addPlayer(){
         if (currentPlayers < maxPlayers){
             this.currentPlayers++;
         }
@@ -22,6 +21,6 @@ public class GameSettings {
         }
     }
     void printGameStatus(){
-        System.out.println("gameName "+ gameName + " текуще кол-во "+ currentPlayers + " макс " + maxPlayers);
+        System.out.println("gameName "+ gameName + " текущее кол-во "+ currentPlayers + " макс " + maxPlayers);
     }
 }

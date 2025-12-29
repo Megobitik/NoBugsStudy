@@ -5,6 +5,10 @@ public class University {
     final int studentID;
     String studentName;
 
+    static {
+        universityName = "MGU";
+    }
+
     University(int someStudentID, String someStudentName){
         this.studentID = someStudentID;
         this.studentName = someStudentName;
