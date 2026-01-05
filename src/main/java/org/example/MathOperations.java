@@ -1,3 +1,5 @@
+package org.example;
+
 public class MathOperations {
     // создаем main метод
     public static void main (String[] args){
