@@ -16,7 +16,7 @@ public class EvenValue {
             }
         }
         else {
-            System.out.println("На ноль не делим");
+            System.out.println(number + " / 2 = 0");
         }
         return number;
     }

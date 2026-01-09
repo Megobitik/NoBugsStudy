@@ -9,7 +9,7 @@ public class CheckNum {
     public static void checkNum(){
         do {
             System.out.println("Ввести число:");
-            int number = scanner.nextInt();
+            number = scanner.nextInt();
 
             if (number < 0) {
                 System.out.println("Правильное число!");

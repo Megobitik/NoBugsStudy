@@ -11,7 +11,12 @@ public class DoExit {
         do {
             System.out.println("ведите команду на латинице:");
             input = scanner.nextLine();
-            System.out.println(input+" Правильная команда");
+            if (!input.equals("exit")) {
+                System.out.println(input + " Неправильная команда");
+            }
+            else {
+                System.out.println(input + " Правильная команда");
+            }
         }while(!input.equals("exit"));
         return input;
     }

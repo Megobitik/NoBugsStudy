@@ -12,14 +12,14 @@ public class Factorial {
 
     public static int calculationactorial(){
         if (n == 0){
-            System.out.println("На ноль не умножаем");
+            System.out.println("должен быть 1");
         }
         if (n < 0){
             System.out.println("отрицательное число");
         }
         else {
-            while (i < n) {
-                result = result * n;
+            while (i <= n) {
+                result *= i;
                 i++;
                 System.out.println(result);
             }

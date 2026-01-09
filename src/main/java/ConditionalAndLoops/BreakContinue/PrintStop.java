@@ -8,7 +8,7 @@ public class PrintStop {
     public String printer(){
         while (true){
             System.out.print("введите команду на латинице: ");
-            String input = scanner.nextLine();
+            this.input = scanner.nextLine();
             if(input.equals("stop")){
                 break;
             }
