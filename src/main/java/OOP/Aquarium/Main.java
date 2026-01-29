@@ -3,7 +3,7 @@ package OOP.Aquarium;
 public class Main {
     static void main(String[] args) {
         SeaCreature shark = new Shark();
-        SeaCreature starFish = new StarFish();
+        SeaCreature starFish = new Starfish();
         Aquarium aquarium = new Aquarium();
 
         aquarium.setCreature(shark);

@@ -1,4 +1,4 @@
-package OOP.Restraunt;
+package OOP.Restaurant;
 
 public class HotDish extends Dish{
     private int temperature;

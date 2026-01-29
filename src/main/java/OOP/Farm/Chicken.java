@@ -1,4 +1,4 @@
-package OOP.Ferm;
+package OOP.Farm;
 
 public class Chicken extends FarmAnimal{
     public Chicken(){

@@ -11,6 +11,6 @@ public class Sculpture extends Exhibit{
     @Override
     public void preserve() {
         setExhibit("Скульптуре");
-        System.out.println(getExhibit() + " требуется рестоврация");
+        System.out.println(getExhibit() + " требуется реставрация");
     }
 }

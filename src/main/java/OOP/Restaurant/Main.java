@@ -1,4 +1,4 @@
-package OOP.Restraunt;
+package OOP.Restaurant;
 
 public class Main {
     static void main(String[] args) {

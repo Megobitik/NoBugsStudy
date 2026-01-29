@@ -1,7 +1,7 @@
 package OOP.Aquarium;
 
-public class StarFish extends SeaCreature{
-    public StarFish(){
+public class Starfish extends SeaCreature{
+    public Starfish(){
         super("звездочка", "ползет");
     }
 

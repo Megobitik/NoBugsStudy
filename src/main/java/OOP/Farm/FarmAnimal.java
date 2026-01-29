@@ -1,4 +1,4 @@
-package OOP.Ferm;
+package OOP.Farm;
 
 public abstract class FarmAnimal {
     private String animal;

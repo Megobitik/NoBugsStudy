@@ -1,4 +1,4 @@
-package OOP.Restraunt;
+package OOP.Restaurant;
 
 public class Drink extends Dish{
     private int volume;

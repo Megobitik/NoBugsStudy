@@ -1,4 +1,4 @@
-package OOP.Restraunt;
+package OOP.Restaurant;
 
 public class Menu {
     private Dish dish;

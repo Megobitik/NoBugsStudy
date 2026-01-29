@@ -1,4 +1,4 @@
-package OOP.Restraunt;
+package OOP.Restaurant;
 
 public abstract class Dish {
     private String dish;
