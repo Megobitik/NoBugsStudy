@@ -23,10 +23,6 @@ public abstract class Pet {
         return pet;
     }
 
-    public void setPet(String pet) {
-        this.pet = pet;
-    }
-
     abstract void feed();
     abstract void interact();
 }

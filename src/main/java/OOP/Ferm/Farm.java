@@ -1,8 +1,10 @@
 package OOP.Ferm;
 
 public class Farm {
+    private FarmAnimal farmAnimal;
 
     public void setAnimal(FarmAnimal farmAnimal){
+        this.farmAnimal = farmAnimal;
         System.out.println(farmAnimal.getAnimal());
     }
 

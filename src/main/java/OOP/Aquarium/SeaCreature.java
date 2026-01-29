@@ -14,10 +14,6 @@ public class SeaCreature implements Move{
         return this.animal;
     }
 
-    public void setMove(String animal){
-        this.animal = animal;
-    }
-
     public String getMove(){
         return this.move;
     }

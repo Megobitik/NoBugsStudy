@@ -1,8 +1,9 @@
 package OOP.Restraunt;
 
 public class Menu {
+    private Dish dish;
     public void addDish(Dish dish){
-        dish.getDish();
+        this.dish = dish;
     }
     public void printMenu(Dish dish){
         dish.getDescription();

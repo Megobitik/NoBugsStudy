@@ -6,7 +6,7 @@ public class Exhibit implements MusumInterface {
     public String getExhibit(){
         return this.exhibit;
     }
-     public void setExhibit(String exhibit){
+    public void setExhibit(String exhibit){
         this.exhibit = exhibit;
      }
 

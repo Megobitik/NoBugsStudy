@@ -29,10 +29,6 @@ public abstract class FarmAnimal {
         return this.produce;
     }
 
-    public void setAnimal(String animal){
-        this.animal = animal;
-    }
-
     abstract void feed();
     abstract void care();
     abstract void produce();

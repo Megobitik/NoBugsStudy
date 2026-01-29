@@ -12,7 +12,7 @@ public class Chicken extends FarmAnimal{
 
     @Override
     public void care(){
-        System.out.println("для уходжа нужен " + getCare());
+        System.out.println("для ухода нужен " + getCare());
     }
 
     @Override
