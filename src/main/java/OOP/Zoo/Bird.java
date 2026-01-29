@@ -7,11 +7,11 @@ public class Bird extends Animal{
     }
     @Override
     public void makeSound() {
-        System.out.print(getSound());
+        System.out.println(getSound());
     }
 
     @Override
     public void move() {
-        System.out.print(getMove());
+        System.out.println(getMove());
     }
 }

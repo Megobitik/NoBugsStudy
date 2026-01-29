@@ -1,6 +1,6 @@
 package OOP.Museum;
 
-public class Exhibit implements MusumInterface {
+public abstract class Exhibit {
     private String exhibit;
 
     public String getExhibit(){
@@ -10,13 +10,6 @@ public class Exhibit implements MusumInterface {
         this.exhibit = exhibit;
      }
 
-    @Override
-    public void describe() {
-
-    }
-
-    @Override
-    public void preserve() {
-
-    }
+    abstract void describe();
+    abstract void preserve();
 }

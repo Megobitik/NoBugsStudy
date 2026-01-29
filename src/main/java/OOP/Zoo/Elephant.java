@@ -3,7 +3,7 @@ package OOP.Zoo;
 public class Elephant extends Animal{
 
     public Elephant(){
-        super("трубить","ногами","Слон");
+        super("трубить","ногами","слон");
     }
     @Override
     public void makeSound() {
@@ -12,6 +12,6 @@ public class Elephant extends Animal{
 
     @Override
     public void move() {
-        System.out.print(getMove());
+        System.out.println(getMove());
     }
 }
