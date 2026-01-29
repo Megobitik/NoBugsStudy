@@ -1,6 +1,6 @@
 package OOP.Aquarium;
 
-public class SeaCreature implements Move{
+public abstract class SeaCreature {
 
     private String move;
     private String animal;
@@ -13,12 +13,9 @@ public class SeaCreature implements Move{
     public String getAnimal(){
         return this.animal;
     }
-
     public String getMove(){
         return this.move;
     }
 
-    @Override
-    public void move() {
-    }
+    public abstract void move();
 }
