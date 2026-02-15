@@ -1,21 +1,22 @@
 package Collections.PriorityQueue;
 
 import java.util.ArrayDeque;
+import java.util.PriorityQueue;
 
 public class Task1 {
     static void main(String[] args) {
-        ArrayDeque<String> deque = new ArrayDeque<>();
+        PriorityQueue <Integer> priorityQueue = new PriorityQueue<>();
 
-        deque.add("1");
-        deque.add("2");
-        deque.add("3");
-        deque.add("4");
-        deque.offer("1");
-        deque.offer("2");
-        deque.offer("5");
+        priorityQueue.add(1);
+        priorityQueue.add(2);
+        priorityQueue.add(3);
+        priorityQueue.offer(4);
+        priorityQueue.offer(5);
+        priorityQueue.offer(6);
 
-        for (String str:deque){
-            System.out.println(str);
+        while (!priorityQueue.isEmpty()){
+            Integer newQueu = priorityQueue.poll();
+            System.out.println(newQueu);
         }
     }
 }
