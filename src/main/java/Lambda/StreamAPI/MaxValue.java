@@ -12,6 +12,8 @@ public class MaxValue {
 
         Optional<Integer> maxNumber = value.stream().max(Comparator.naturalOrder());
 
-        System.out.println(maxNumber.get());
+        String result = maxNumber.map(n -> "Max: " + n).orElse("Нет максимума");
+
+        System.out.println(result);
     }
 }

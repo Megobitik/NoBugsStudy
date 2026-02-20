@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class GropuBy {
+public class GroupBy {
 
     static void main(String[] args) {
 

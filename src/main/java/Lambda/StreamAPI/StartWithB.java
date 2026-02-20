@@ -11,6 +11,6 @@ public class StartWithB {
 
         Optional<String> startWithB = words.stream().filter(s -> s.startsWith("Б")).findFirst();
 
-        System.out.println(startWithB);
+        System.out.println(startWithB.orElse("не найдено"));
     }
 }
