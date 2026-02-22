@@ -1,4 +1,4 @@
-package Jenerics;
+package Generics;
 
 public class Task2 {
 

@@ -1,4 +1,4 @@
-package Jenerics;
+package Generics;
 
 public class Pair<T, U> {
     private T first;

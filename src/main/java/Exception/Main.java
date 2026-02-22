@@ -1,4 +1,4 @@
-package Exeption;
+package Exception;
 
 public class Main {
     static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Main {
             //validationAge.validationAge(200);
             //validationAge.validationAge(-100);
 
-        }catch (InvalideAgeException m){
+        }catch (InvalidAgeException m){
             System.out.println("Ошибка");
         }
     }

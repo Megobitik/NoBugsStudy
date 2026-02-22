@@ -1,4 +1,4 @@
-package Exeption;
+package Exception;
 
 public class Task2 {
     static void main(String[] args) {
