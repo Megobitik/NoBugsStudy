@@ -17,4 +17,5 @@ public class ValidationEmail {
             System.out.println(e);
         }
     }
+
 }
