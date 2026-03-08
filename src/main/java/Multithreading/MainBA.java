@@ -5,7 +5,10 @@ public class MainBA {
         PrintA printA = new PrintA();
         PrintB printB = new PrintB();
 
-        printB.run();
-        printA.run();
+        Thread t1 = new Thread(printA);
+        Thread t2 = new Thread(printB);
+
+        t1.start();
+        t2.start();
     }
 }
