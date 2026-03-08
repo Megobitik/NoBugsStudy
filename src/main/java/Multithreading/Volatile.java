@@ -4,7 +4,7 @@ public class Volatile {
     private static volatile boolean stop;
     private static int count = 0;
 
-    static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(() -> {
             while (!stop){
                 count ++;

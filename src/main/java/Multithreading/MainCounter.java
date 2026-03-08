@@ -1,7 +1,7 @@
 package Multithreading;
 
 public class MainCounter {
-    static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         Counter counter = new Counter();
 
         Thread t1 = new  Thread(()-> {

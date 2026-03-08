@@ -22,7 +22,7 @@ public class ThreadMsg extends Thread {
 
     }
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         ThreadMsg threadMsg = new ThreadMsg();
         threadMsg.start();
     }
