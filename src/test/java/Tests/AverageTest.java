@@ -32,4 +32,10 @@ public class AverageTest {
         int[] actual = {};
         assertThrows(NoSuchElementException.class,() -> average.findAverage(actual));
     }
+
+    @Test
+    public void checkNullArray(){
+        int[] actual = null;
+        assertThrows(NullPointerException.class,() -> average.findAverage(actual));
+    }
 }

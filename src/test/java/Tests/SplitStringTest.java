@@ -2,7 +2,7 @@ package Tests;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class SplitStringTest {
 
@@ -33,6 +33,15 @@ public class SplitStringTest {
         String[] expect = {"word"};
 
         assertArrayEquals(expect,splitStrings.splitString(actual,delimiter));
+    }
+
+    @Test
+    public void checkSplitStringWithNullString(){
+        String actual = null;
+        String delimiter = ",";
+        String[] expect = null;
+
+        assertThrows(NullPointerException.class,() -> splitStrings.splitString(actual,delimiter));
     }
 
 }

@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class SortStringsTest {
     SortStrings sortStrings = new SortStrings();
@@ -33,5 +33,12 @@ public class SortStringsTest {
         List<String> expect = Collections.emptyList();
 
         assertEquals(expect,sortStrings.sortByLength(actual));
+    }
+
+    @Test
+    public void checkNullString(){
+        List<String> actual = null;
+
+        assertThrows(NullPointerException.class,() -> sortStrings.sortByLength(actual));
     }
 }
