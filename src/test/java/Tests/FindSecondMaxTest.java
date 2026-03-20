@@ -19,7 +19,7 @@ public class FindSecondMaxTest {
     @Test
     public void findMaxWithEqualsElement(){
         int[] input = {4,4,4,4};
-        assertThrows(NoSuchElementException.class,() -> maxMethod.findSecondMax(input),"Нет второго максимума");
+        assertThrows(IllegalArgumentException.class,() -> maxMethod.findSecondMax(input),"Нет второго максимума");
     }
 
     @Test

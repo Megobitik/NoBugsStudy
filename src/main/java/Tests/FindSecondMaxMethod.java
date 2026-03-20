@@ -4,6 +4,15 @@ import java.util.Arrays;
 
 public class FindSecondMaxMethod {
     public int findSecondMax(int[] numbers) {
-        return Arrays.stream(numbers).distinct().sorted().skip(numbers.length - 2).findFirst().orElseThrow();
+        int[] uniqueSorted = Arrays.stream(numbers)
+                .distinct()
+                .sorted()
+                .toArray();
+
+        if (uniqueSorted.length < 2) {
+            throw new IllegalArgumentException("Массив должен содержать хотя бы два различных числа");
+        }
+
+        return uniqueSorted[uniqueSorted.length - 2];
     }
 }

@@ -11,7 +11,7 @@ public class ValidJsonTest {
 
     @Test
     public void checkValidJson(){
-        String string =  "\"{\"key\":\"value\"}\"";
+        String string = "{\"key\":\"value\"}";
         assertTrue(validJson.isValidJson(string));
     }
 
