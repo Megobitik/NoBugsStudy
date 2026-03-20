@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CountVowelsTest {
     CountVowelsMethod countV = new CountVowelsMethod();
@@ -32,6 +32,6 @@ public class CountVowelsTest {
 
     @Test
     public void countVowelsIsNull(){
-        assertEquals(IllegalArgumentException.class,countV.countVowels(null));
+        assertThrows(IllegalArgumentException.class,() -> countV.countVowels(null));
     }
 }
