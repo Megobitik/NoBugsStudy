@@ -17,8 +17,8 @@ public class GradeService <T extends Number>{
         grades.add(studentsGrade);
     }
 
-    public double getAverageBySubject(String subject){
-        synchronized (grades){
+    public synchronized double getAverageBySubject(String subject){
+        {
             return grades.stream().
                     filter(g->g.getSubject().equals(subject))
                     .mapToDouble(g -> g.getGrade().doubleValue())
