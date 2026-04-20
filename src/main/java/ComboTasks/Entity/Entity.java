@@ -2,7 +2,7 @@ package ComboTasks.Entity;
 
 public class Entity {
     static void main(String[] args) {
-        EntityManager<User> entityManager = new EntityManager();
+        EntityManager entityManager = new EntityManager();
 
         entityManager.add(new User("Alex", 25, true));
         entityManager.add(new User("Bob", 30, false));
