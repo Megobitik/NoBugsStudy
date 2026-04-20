@@ -13,7 +13,7 @@ public class InventoryServiceTest {
     InventoryService service = new InventoryService();
 
     @Test
-    public void addProductWhenInventoryOpenTest(){
+    public void addProductWhenInventoryOpenTest() throws OutOfStockException {
         Product product = new Product("MAC", 1000, "Electronics");
 
         service.addProduct(product);
@@ -35,15 +35,14 @@ public class InventoryServiceTest {
     }
 
     @Test
-    public void checkAddProductWhenInventoryClosed(){
+    public void checkAddProductWhenInventoryClosed() {
         service.setInventoryOpen(false);
 
-        Product product = new Product("Phone",800,"Phones");
-        service.addProduct(product);
+        Product product = new Product("Phone", 800, "Phones");
 
-        List<Product> products = service.getAllProductByCategory("Phones");
-
-        assertTrue(products.isEmpty());
+        assertThrows(OutOfStockException.class, () -> {
+            service.addProduct(product);
+        });
     }
 
     @Test
@@ -52,7 +51,7 @@ public class InventoryServiceTest {
     }
 
     @Test
-    public void addAllProductWhenInventoryOpenTest(){
+    public void addAllProductWhenInventoryOpenTest() throws OutOfStockException {
         Product product1 = new Product("MAC", 1000, "Electronics");
         Product product2 = new Product("IPHONE", 2000, "Electronics");
 
@@ -67,14 +66,14 @@ public class InventoryServiceTest {
     }
 
     @Test
-    public void checkFiltredProductByPrice(){
+    public void checkFiltredProductByPrice() throws OutOfStockException {
         Product product1 = new Product("MAC", 1000, "Electronics");
         Product product2 = new Product("IPHONE", 2000, "Electronics");
 
         service.addProduct(product1);
         service.addProduct(product2);
 
-        List<Product> products = service.getProductByPrice("Electronics",1500);
+        List<Product> products = service.getProductByPrice("Electronics",1500,2000);
 
         assertEquals(1,products.size());
         assertEquals("IPHONE",products.get(0).getName());
